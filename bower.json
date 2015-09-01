@@ -1,0 +1,27 @@
+{
+  "name": "SpaApp",
+  "version": "0.0.1",
+  "description": "Durandal+Knockoutjs Build a Single Page Application",
+  "keywords": [
+    "Durandal",
+    "Knockoutjs"
+  ],
+  "authors": [
+    "bigpao.luo <bigpao.luo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "durandal": "~2.1.0",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0",
+    "i18next": "~1.10.2",
+    "requirejs-text": "~2.0.14"
+  }
+}
