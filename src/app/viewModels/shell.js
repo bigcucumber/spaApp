@@ -8,7 +8,7 @@ define(['plugins/router', 'durandal/app', 'durandal/system'], function (router, 
         },
         activate: function () {
             router.map([
-                { route: '', title:'Login', moduleId: 'viewModels/index', nav: true },
+                { route: '', title:'Login', moduleId: 'viewModels/login', nav: true },
             ]).mapUnknownRoutes('viewModels/common/notfound', 'not-found').buildNavigationModel();
             return router.activate();
         },
