@@ -10,12 +10,14 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '44NySJwVH0hvXjSrHZ2WLHTAFhDg1DuI',
+            'enableCsrfValidation' => false,
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            //'identityClass' => 'app\models\User',
+            'identityClass' => 'app\modules\spa\models\SpaUsers',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -38,6 +40,15 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+    ],
+
+    'modules' => [
+        'spa' => [
+            'class' => 'app\modules\spa\spa',
+        ],
+        'admin' => [
+            'class' => 'app\modules\admin\admin',
+        ],
     ],
     'params' => $params,
 ];

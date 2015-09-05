@@ -1,0 +1,87 @@
+<div class="row register">
+    <div class="col-md-6 center-line">
+        <div clas="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 border-shadow">
+                <strong>Register</strong>
+                <hr/>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                        <input type="text" class="form-control" placeholder="Username" data-bind="value: username,
+                        valueUpdate: 'afterkeydown'"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                        <input type="text" class="form-control" placeholder="Email" data-bind="value: email,
+                        valueUpdate:'afterkeydown'"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-star"></i></div>
+                        <input type="password" class="form-control" placeholder="Password" data-bind="value: password,
+                         valueUpdate: 'afterkeydown'"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-star"></i></div>
+                        <input type="password" class="form-control" placeholder="Password Again" data-bind="value:
+                        repassword, valueUpdate: 'afterkeydown'"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-venus-mars"></i></div>
+                        <select name=""  class="form-control" data-bind="options: gender, selectedOptions: sex, optionsValue: 'id',
+                         optionsText: 'genderValue'">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="sr-only"></label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-get-pocket"></i></div>
+                        <select name="" class="form-control" data-bind="options: customerTypes, selectedOptions: type_name, optionsValue: 'id',
+                        optionsText: 'type_name'"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-info" data-bind="enable: canRegister, click: register">Register</button>
+                    <span class="error-notice" data-bind="visible: showErrMsg, text: errMsg"></span>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 border-shadow">
+            <strong>Other login</strong>
+            <hr/>
+            <div class="form-inline">
+                <div class="col-md-3">
+                    <i class="fa fa-qq fa-3x"></i>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-weixin fa-3x"></i>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-weibo fa-3x"></i>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-twitter fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

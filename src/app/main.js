@@ -1,4 +1,4 @@
-define(['durandal/app', 'durandal/system', 'durandal/viewLocator', 'plugins/router', 'durandal/binder', 'appConfig', 'i18next', 'jquery'], function(app, system, viewLocator, router, binder, appConfig, i18next, jQuery){
+define(['durandal/app', 'durandal/system', 'durandal/viewLocator', 'plugins/router', 'durandal/binder', 'appConfig', 'i18next', 'jquery'], function(app, system, viewLocator, router, binder, appConfig, i18next, $){
 
 
     system.debug(appConfig.debug);
@@ -18,6 +18,13 @@ define(['durandal/app', 'durandal/system', 'durandal/viewLocator', 'plugins/rout
     app.configurePlugins({
         router:true,
         dialog: true
+    });
+
+
+    $(document).on('mouseover', '.border-shadow', function(){
+        $(this).addClass('border-shadow-hover');
+    }).on('mouseout', '.border-shadow', function(){
+        $(this).removeClass('border-shadow-hover');
     });
 
     app.start().then(function(){

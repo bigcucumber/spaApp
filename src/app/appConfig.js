@@ -4,6 +4,7 @@ define(function(){
         title: 'Letshareit',
         defaultLang: 'en',
         defaultPageSize: 20,
-        resourcePath: 'resource'
+        resourcePath: 'resource',
+        hostUrl: 'http://localhost/SpaApp/yii2/web/index.php?r='
     }
 });

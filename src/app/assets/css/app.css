@@ -3,6 +3,14 @@ body{
     background-attachment: fixed;
     background-color: transparent;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
-.login{ border:1px solid #ccc; border-radius: 3px; padding:30px; margin-top: 18%; box-shadow: inset 0 0 15px #ccc, 0 0 10px #999; }
+.border-shadow {border:1px solid #ccc; border-radius: 3px; padding:30px;  box-shadow: inset 0 0 15px #ccc, 0 0 10px #999;}
+.border-shadow-hover {border:1px solid #999; border-radius: 3px; padding:30px;  box-shadow: inset 0 0 15px #ccc, 0 0 10px black;}
+.login{ margin-top: 18%;}
+.error-notice{ color: red;}
+.error-notice-input{ border: 1px solid rgba(255, 20, 20, 0.5);}
+
+/* create-account */
+.register {margin-top: 10%;}
+.center-line {border-right: 1px solid #cccccc;}

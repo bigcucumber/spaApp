@@ -89,6 +89,11 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
+        $session = Yii::$app -> getSession();
+        echo '<pre>';
+        $session -> open();
+        var_dump($_SESSION);
+        exit;
         return $this->render('about');
     }
 }

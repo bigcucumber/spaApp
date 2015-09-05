@@ -1,11 +1,12 @@
 <div class="form-block row">
     <div class="col-md-4"></div>
-    <div class="col-md-4 login">
+    <div class="col-md-4 border-shadow login">
         <div class="form-group">
             <label class="label-control sr-only"></label>
             <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                <input type="text" class="form-control"  data-bind="value: username, valueUpdate: 'afterkeydown'" placeholder="Username">
+                <input type="text" class="form-control"  data-bind="value: username, valueUpdate: 'afterkeydown',
+                 hasFocus: errorMsg('')" placeholder="Username">
             </div>
         </div>
         <div class="form-group">
@@ -14,7 +15,8 @@
                 <div class="input-group-addon">
                     <i class="fa fa-star"></i>
                 </div>
-                <input type="text" class="form-control" data-bind="value: password, valueUpdate: 'afterkeydown'" placeholder="Password">
+                <input type="password" class="form-control" data-bind="value: password, valueUpdate: 'afterkeydown',
+                hasFocus: errorMsg('')" placeholder="Password">
             </div>
         </div>
 
@@ -23,9 +25,14 @@
                 <input type="checkbox" data-bind="checked: isRemember">
                 Remember
             </label>
+
+            <span class="pull-right error-notice" data-bind="text: errorMsg"></span>
         </div>
-        <button type="button" data-bind="enable: isSubmit, click: isReset" class="btn btn-danger">Reset</button>
-        <button type="button" data-bind="enable: isSubmit, click: submit" class="btn btn-info">Submit</button>
+        <div class="form-group">
+            <button type="button" data-bind="enable: isSubmit, click: isReset" class="btn btn-danger">Reset</button>
+            <button type="button" data-bind="enable: isSubmit, click: submit" class="btn btn-info">Submit</button>
+            <a href="#create-account" class="btn btn-link pull-right">Create Account?</a>
+        </div>
     </div>
     <div class="col-md-4"></div>
 </div>
